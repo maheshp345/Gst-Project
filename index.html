@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="navsection">
+            <div class="navbar">
+                <div class="burger" id="menu" onclick="menuFunction()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+
+                </div>
+
+
+                <div class="nav-links">
+                    <p><a href="#">Home</a></p>
+                    <p><a href="#">Aboutus</a></p>
+                    <p><a href="#items">Services</a></p>
+                    <p><a href="#Contactus">Contactus</a></p>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="./images/dhabha.logo.jfif" alt="">
+            </div>
+        </div>
+
+
+        <div class="image1">
+            <img src="./images/image2.jfif" alt="">
+
+            <p class="para">Feeling Hungry Ordernow.</p>
+        </div>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <div class="person-details">
+            <h1>Person Details</h1>
+            <p> Name : <input type="text" id="name"></p>
+            <p>Mobile : <input type="text" id="mobile"></p>
+            <p>Email : <input type="email" id="email"></p>
+            <p> Place : <input type="text" id="place"></p>
+        </div>
+        <div class="line">
+            <hr>
+        </div>
+        <div class="items" id="items">
+            <h1>Items</h1>
+
+            <p>Starters : <input type="text" id="Starters"></p>
+            <p>Chicken : <input type="text" id="chicken"></p>
+
+            <p>Biryani : <input type="text" id="Biryani"></p>
+            <p> Burgers : <input type="text" id="Burgers"></p>
+
+            <p>Gst : <input type="text" id="Gst"></p>
+
+            <button type="submit" id="submit" class="button" onclick="add()"> Payment </button>
+
+            <div id="demo" class="demo1"></div>
+
+
+        </div>
+        <p id="bill" class="bill-1"></p>
+        <h2 class="heading2">Note : bill exceeds 180000 then wiil only pay 500 rupees in tip otherwise will pay 1000
+            rupees intip. </h2>
+
+        <div class="line">
+            <hr>
+        </div>
+
+        <footer>
+            <div class="footer">
+                <div>
+                    <img src="./images/image1.jpg" alt="">
+                </div>
+
+                <div id="Contactus">
+                    <h3>Contactus</h3>
+                    <p>foodrestaurent@gmail.com</p>
+                </div>
+            </div>
+
+        </footer>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
